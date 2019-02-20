@@ -4,10 +4,12 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'registeration',
     pathMatch: 'full'
   },
-  { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' }
+  { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
+  { path: 'registration', loadChildren: './pages/registration/registration.module#RegistrationPageModule' }
+
 ];
 
 @NgModule({
