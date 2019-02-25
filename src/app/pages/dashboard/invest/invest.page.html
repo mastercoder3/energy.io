@@ -1,0 +1,316 @@
+<ion-content>
+
+  <div id="header">
+    <ion-toolbar>
+      <ion-title>
+        Investieren:
+      </ion-title>
+      <ion-buttons>
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+    <table class="stTable">
+      <thead>
+        <tr>
+          <th>
+            <div class="circle" (click)="setStepper('first')"
+              [class.filledCircle]="stepper === 'first' || stepper === 'done' "></div>
+          </th>
+          <th>
+            <div class="line">
+              <hr>
+            </div>
+          </th>
+          <th>
+            <div class="circle" (click)="setStepper('second')"
+              [class.filledCircle]="stepper === 'second' || stepper === 'done' "></div>
+          </th>
+          <th>
+            <div class="line">
+              <hr>
+            </div>
+          </th>
+          <th>
+            <div class="circle" (click)="setStepper('third')"
+              [class.filledCircle]="stepper === 'third' || stepper === 'done' "></div>
+          </th>
+          <th>
+            <div class="line">
+              <hr>
+            </div>
+          </th>
+          <th>
+            <div class="circle" (click)="setStepper('fourth')"
+              [class.filledCircle]="stepper === 'fourth' || stepper === 'done' "></div>
+          </th>
+          <th>
+            <div class="line">
+              <hr>
+            </div>
+          </th>
+          <th>
+            <div class="circle" (click)="setStepper('five')"
+              [class.filledCircle]="stepper === 'five' || stepper === 'done' "></div>
+          </th>
+        </tr>
+      </thead>
+    </table>
+    <table style="margin-left: 3px;">
+      <thead>
+        <tr>
+          <th>
+            <p text-wrap>INVESTIErEN</p>
+          </th>
+          <th><span class="space">&nbsp;&nbsp;</span></th>
+          <th>
+            <p text-wrap>DATEN</p>
+          </th>
+          <th><span class="space">&nbsp;&nbsp;</span></th>
+          <th>
+            <p text-wrap>AUSWEIS</p>
+          </th>
+          <th><span class="space"></span></th>
+          <th>
+            <p text-wrap>BESTÄTIGUNG</p>
+          </th>
+          <th><span class="space"></span></th>
+          <th>
+            <p text-wrap>ZEICHNUNG</p>
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+
+  <div [ngSwitch]="stepper">
+    <div *ngSwitchCase="'first'">
+      <h3 id="topHeading">Investieren und mind. 5,2 % Zinsen p. a.Kassieren:</h3>
+      <h3 id="productHeading">Windkraft</h3>
+
+      <ion-slides #sliders>
+
+        <ion-slide>
+          <img src="assets/images/product.png">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/images/product.png">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/images/product.png">
+        </ion-slide>
+      </ion-slides>
+
+      <div class="arrows">
+        <ion-icon class="left" (click)="prev()" name="arrow-back"></ion-icon>
+        <ion-icon class="right" (click)="next()" name="arrow-forward"></ion-icon>
+      </div>
+
+      <!-- <div style="width: 90% !important; display: block; margin-left: auto; margin-right: auto; ">
+      <accordion [showArrows]="true" [closeOthers]="true" style="width:100% !important;">
+
+      <div class="accordion">
+          <accordion-group style="width: 100% !important;" (onOpen)="doSomethingOnOpen()" (onClose)="doSomethingOnClose()"> 
+        <accordion-heading style="position: relative; top: 10px; left: 15px;" >
+            Custom heading
+            <ion-icon style="margin-top: 13px;" [class.hide]="show" [class.show]="!show"  class="right" name="arrow-forward"></ion-icon>
+            <ion-icon style="margin-top: 13px;" [class.hide]="!show" [class.show]="show" class="right" name="arrow-down"></ion-icon>
+        </accordion-heading>
+
+        <p style="padding-left: 15px;">Its all about me. Lore</p>
+      </accordion-group>
+      </div>
+
+    </accordion>
+  </div> -->
+
+      <div class="checks-div1">
+        <ion-row>
+          <ion-checkbox class="checkbox1" checked="true"></ion-checkbox>
+          <p class="checkbox-para1">Newsletter erhalten ?</p>
+        </ion-row>
+      </div>
+      <div class="checks-div1">
+        <ion-row>
+          <ion-checkbox class="checkbox1" checked="true"></ion-checkbox>
+          <p class="checkbox-para1">Newsletter erhalten ?</p>
+        </ion-row>
+      </div>
+      <div class="checks-div1">
+        <ion-row>
+          <ion-checkbox class="checkbox1" checked="true"></ion-checkbox>
+          <p class="checkbox-para1">Newsletter erhalten ?</p>
+        </ion-row>
+      </div>
+      <div class="checks-div1">
+        <ion-row>
+          <ion-checkbox class="checkbox1" checked="true"></ion-checkbox>
+          <p class="checkbox-para1">Newsletter erhalten ?</p>
+        </ion-row>
+      </div>
+
+
+      <br>
+      <ion-button class="btn" (click)="setStepper('second')">WEITER</ion-button>
+
+
+    </div>
+
+
+    <div *ngSwitchCase="'second'">
+      <h4 id="secondHeading">Personliche Informationen:</h4>
+      <form>
+        <ion-row>
+          <ion-input class="input1" type="text" placeholder="Vornamen:"></ion-input>
+          <ion-input class="input1" type="text" placeholder="Nachnamen:"></ion-input>
+        </ion-row>
+        <ion-row>
+          <ion-input class="input2" type="text" placeholder="Adresse:"></ion-input>
+        </ion-row>
+        <ion-row>
+          <ion-input class="input2" type="text" placeholder="PLZ,Stadt:"></ion-input>
+        </ion-row>
+        <ion-row>
+          <ion-input class="input2" type="text" placeholder="Land:"></ion-input>
+        </ion-row>
+        <ion-row>
+          <ion-input class="input2" type="text" placeholder="Geb. Datum:"></ion-input>
+        </ion-row>
+
+        <div class="checks-div1">
+          <ion-row>
+            <ion-checkbox class="checkbox1" checked="true"></ion-checkbox>
+            <p class="checkbox-para1">Newsletter erhalten ?</p>
+          </ion-row>
+        </div>
+        <div class="checks-div1">
+          <ion-row>
+            <ion-checkbox class="checkbox1" checked="true"></ion-checkbox>
+            <p class="checkbox-para1">Newsletter erhalten ?</p>
+          </ion-row>
+        </div>
+
+
+      </form>
+
+      <ion-button class="disableBtn" [disabled]="true" (click)="setStepper('first')">ZURÜCK</ion-button>
+      <ion-button class="btn" (click)="setStepper('third')">WEITER</ion-button>
+    </div>
+
+    <div *ngSwitchCase="'third'">
+      <h4 id="thirdHeading">Bitte Bestatigen Sie Ihre Ausweisdaten:</h4>
+      <br>
+      <h4 id="productHeading">Vorderseite:</h4>
+      <img (click)="presentModal()" src="assets/images/camera.png" alt="" id="thirdCamera">
+      <br>
+      <h4 id="productHeading">Ruckseite:</h4>
+      <img (click)="presentModal()" src="assets/images/camera.png" alt="" id="thirdCamera">
+      <br>
+      <div class="checks-div">
+        <ion-row>
+          <ion-icon name="radio-button-off" class="checkbox"></ion-icon>
+          <p class="checkbox-para" text-wrap>Alternativ Ausweisdaten eingeben:</p>
+          <ion-icon class="thirdright" name="arrow-down"></ion-icon>
+        </ion-row>
+      </div>
+      <br>
+      <form>
+        <ion-row>
+          <ion-input class="input2" type="text" placeholder="Ausweisnummer:"></ion-input>
+        </ion-row>
+        <ion-row>
+          <ion-input class="input2" type="text" placeholder="Ausstellende Behorde:"></ion-input>
+        </ion-row>
+      </form>
+      <br>
+      <ion-button class="btn" (click)="setStepper('fourth')">WEITER</ion-button>
+    </div>
+    <div *ngSwitchCase="'fourth'">
+      <h5 class="fourthHeading">Bitte bestatigen Sie folgende Dokumente:</h5>
+      <div class="item">
+        <h5 style="text-align: center !important; color: red; opacity: 0.8;">Vermogensinformationsblatt</h5>
+        <div class="document">
+          <img src="assets/images/doc1.png" alt="">
+          <ion-checkbox class="checkbox1" checked="true"></ion-checkbox>
+        </div>
+      </div>
+      <div class="item">
+        <h5 style="text-align: center !important; color: red; opacity: 0.8;">Vermogensinformationsblatt</h5>
+        <div class="document">
+          <img src="assets/images/doc1.png" alt="">
+          <ion-checkbox class="checkbox1" checked="true"></ion-checkbox>
+        </div>
+      </div>
+      <div class="item">
+        <h5 style="text-align: center !important; color: red; opacity: 0.8;">Vermogensinformationsblatt</h5>
+        <div class="document">
+          <img src="assets/images/doc1.png" alt="">
+          <ion-checkbox class="checkbox1" checked="true"></ion-checkbox>
+        </div>
+      </div>
+
+      <p style="text-align: center;"><strong>some text</strong></p>
+      <div class="small">
+        <p>some more text.</p>
+        <p>some more text.</p>
+        <p>some more text.</p>
+        <p>some more text.</p>
+      </div>
+      <ion-button class="btn" (click)="setStepper('five')">WEITER</ion-button>
+
+
+    </div>
+
+    <div *ngSwitchCase="'five'">
+      <div id="payment">
+        <ion-radio-group>
+
+          <div>
+            <ion-radio slot="start" value="visa" checked mode="md"></ion-radio>
+            <ion-label>Zahe 50,000 &euro;</ion-label>
+            <br><br>
+            <span><img src="assets/images/visa.png" alt=""
+                style="height: 15px;  width: 40px; position: relative; top: 5px; left: 50px;"></span>
+          </div>
+
+          <div>
+            <ion-radio slot="start" value="paypal" mode="md"></ion-radio>
+            <ion-label>Zahe 50,000 &euro;</ion-label>
+            <br><br>
+            <span><img src="assets/images/paypal.png" alt=""
+                style="height: 15px;  width: 40px; position: relative; top: 5px; left: 50px;"></span>
+          </div>
+
+          <div>
+            <ion-radio slot="start" value="klarna" mode="md"></ion-radio>
+            <ion-label>Zahe 50,000 &euro;</ion-label>
+            <br><br>
+            <span><img src="assets/images/klarna.png" alt=""
+                style="height: 15px;  width: 43px; position: relative; top: 5px; left: 50px;"></span>
+          </div>
+        </ion-radio-group>
+      </div>
+      <br>
+      <br>
+      <ion-button class="disableBtn" [disabled]="true">ZURÜCK</ion-button>
+      <br>
+      <ion-button class="btn" (click)="setStepper('done')">ZAHLUNGGSPFLICHTIG ABSCHLIEBEN</ion-button>
+    </div>
+
+    <div *ngSwitchCase="'done'">
+      <img src="assets/images/done.png" alt="" style="position: relative; left: 10%;">
+      <h1 class="centerHead">VIELEN DANK!</h1>
+      <h1 class="centerHead">FUR IHR INVESTMENT</h1>
+      <br>
+      <p class="centerPar">Sie Konnen Ihre Vertrage in</p>
+      <p class="centerPar">Ihrem Dashboard einsehen.</p>
+      <br>
+      <ion-button class="btn" routerLink="/dashboard/menu">ZUM DASHBOARD</ion-button>
+
+    </div>
+
+
+  </div>
+
+
+
+</ion-content>

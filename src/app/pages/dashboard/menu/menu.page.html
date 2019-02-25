@@ -1,0 +1,100 @@
+ 
+<ion-content>
+    <div id="header">
+        <ion-toolbar>
+          <ion-title>
+            MENU:
+          </ion-title>
+          <br>
+          <br>
+          <ion-buttons>
+              <ion-menu-button ></ion-menu-button>
+            </ion-buttons>
+        </ion-toolbar>
+      
+          <table>
+            <thead>
+              <th>
+                <div class="item1" routerLink="/dashboard/vertage">
+                  <ion-icon class="icon" name="today"></ion-icon>
+                </div>
+                <p class="para" >VERTRAGE</p>
+              </th>
+              <th>
+                <div class="item1" routerLink="/dashboard/home">
+                  <i id="icon" class="fa fa-dollar-sign"></i>
+                </div>
+                <p class="para">GUTHABEN</p>
+              </th>
+              <th>
+                <div class="item1" routerLink="/dashboard/income-history">
+                  <i id="icon" class="far fa-calendar-alt"></i>
+                </div>
+                <p class="para">HISTORIE</p>
+              </th>
+            </thead>
+          </table>
+      
+          <table>
+            <thead>
+              <th>
+                <div class="item1" routerLink="/dashboard/setup">
+                    <i id="icon" class="fa fa-cog"></i>
+                </div>
+                <p class="para">SETUP</p>
+              </th>
+              <th>
+                <div class="item1" routerLink="/dashboard/profile">
+                  <ion-icon class="icon" name="person"></ion-icon>
+                </div>
+                <p class="para">PROFIL</p>
+              </th>
+              <th>
+                <div class="item1" routerLink="/login">
+                <ion-icon class="icon" name="log-out"></ion-icon>
+                </div>
+                <p class="para">LOG OUT</p>
+              </th>
+            </thead>
+          </table>
+        
+      
+       </div>
+
+  <ion-slides #sliders>
+    <ion-slide>
+      <img src="assets/images/Graph2.png">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/images/Graph2.png">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/images/Graph2.png">
+    </ion-slide>
+  </ion-slides>
+
+  <div class="arrows">
+    <ion-icon class="left" (click)="prev()" name="arrow-back"></ion-icon>
+    <ion-icon class="right" (click)="next()" name="arrow-forward"></ion-icon>
+  </div>
+
+  <div style="width: 90% !important; display: block; margin-left: auto; margin-right: auto; ">
+      <accordion [showArrows]="true" [closeOthers]="true" style="width:100% !important;">
+
+      <div class="accordion">
+          <accordion-group style="width: 100% !important;" (onOpen)="doSomethingOnOpen()" (onClose)="doSomethingOnClose()"> 
+        <accordion-heading style="position: relative; top: 10px; left: 15px; font-size: 14px" >
+            <i id="icon-dot" class="far fa-dot-circle"></i>
+            02.Februar 2019
+            <ion-icon style="margin-top: 16px;" [class.hide]="show" [class.show]="!show"  class="right" name="arrow-forward"></ion-icon>
+            <ion-icon style="margin-top: 16px;" [class.hide]="!show" [class.show]="show" class="right" name="arrow-down"></ion-icon>
+        </accordion-heading>
+
+        <p style="padding-left: 15px;">Its all about me. Lore</p>
+      </accordion-group>
+      </div>
+
+    </accordion>
+  </div>
+  <ion-button class="btn1">ZUM DASHBOARD</ion-button>
+</ion-content>

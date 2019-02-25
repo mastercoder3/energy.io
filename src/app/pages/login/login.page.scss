@@ -1,0 +1,73 @@
+ion-content{
+    --ion-background-color: #fbfcfc !important;
+} 
+.startLogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 2.3em;
+    margin-top: -10px;
+    opacity: 0.5;
+    font-weight: 0 !important;
+}
+
+h5{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    color: #888888;
+    letter-spacing: 1px;
+}
+
+ion-input{
+    background-color: white;
+    border: #ffffff 1px solid;
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80% !important;
+    box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.2);
+    padding-left: 20px !important;
+}
+
+ion-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80% !important;
+    --border-radius: 2px !important;
+    height: 60px;
+    --color: white;
+    --border-color: none;
+    --background: red !important;
+    box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.2);
+    --background-activated: rgba(96,213,53);
+    --background: linear-gradient(90deg, rgba(204,236,49) 0%, rgba(204,236,49) 13.5%, rgba(204,236,49) 33.33%, rgba(96,213,53) 100%) !important;
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+    text-align: center !important;
+    font-weight: bold;
+    color: #888888;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #888888;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9em;
+}

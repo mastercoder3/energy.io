@@ -1,0 +1,112 @@
+ion-menu-button{
+    color: #8ACE6A !important;
+    position: relative;
+    left: 10px;
+}
+
+#header{
+    position: relative;
+    top: -8px;
+    width: 100% !important;
+    height: 100px !important;
+    background: #FBFCFC;
+}
+.header-ios ion-toolbar:last-child {
+    --border-width: 0;
+}
+ion-toolbar{
+    --background: #FBFCFC;
+    margin-top: 10px;
+}
+
+ion-title{
+    font-family: 'Roboto', sans-serif;
+    text-align: center !important;
+    font-weight: lighter;
+    color: #888888;
+    font-size: 1.6em;
+}
+
+#header > h4{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: #888888;
+}
+
+ion-content{
+    height: 100%;
+    width: 100%;
+}
+
+#topSection{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: #888888;
+}
+
+#topSection > h3{
+    text-align: center !important;
+}
+
+h3 > small{
+    font-size: 0.6em;
+    position: relative;
+    top: -11px;
+}
+
+#topSection > img {
+    display: block;
+    margin:0 auto;
+}
+
+#topSection > p{
+    text-align: center;
+    margin-top: -10px;
+}
+
+.checks-div{
+    background: white;
+    height: 60px;
+    width: 95%;
+    margin-top: 25px;
+    margin: 11px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+ }
+
+ .checkbox{
+    color:rgb(62, 150, 22);
+    font-weight: bolder;
+    font-size: 1.2em;
+    position: relative;
+    top: 20px;
+    left: 20px;
+ }
+
+ .checkbox-para{
+    margin-top: 20px;
+    position: relative;
+    left: 50px;
+    font-weight: lighter;
+    color: #888888;
+    font-size: 0.85em;
+ }
+
+ .thirdright{
+    position: relative;
+    left: 25%;
+    top: 20px;
+    color: #888888;
+}
+
+.btn{
+    font-weight: bold;
+    height: 60px;
+    width: 95%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    --border-radius: 2px !important;
+    --background-activated: rgba(96,213,53);
+    --background: linear-gradient(90deg, rgba(204,236,49) 0%, rgba(204,236,49) 13.5%, rgba(204,236,49) 33.33%, rgba(96,213,53) 100%) !important;
+}

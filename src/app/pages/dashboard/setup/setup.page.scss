@@ -1,0 +1,74 @@
+ion-menu-button{
+    color: #8ACE6A !important;
+    position: relative;
+    left: 10px;
+}
+.header-ios ion-toolbar:last-child {
+    --border-width: 0;
+}
+.new-background-color{
+    --background: #FBFCFC;
+}
+ion-title{
+    font-family: 'Roboto', sans-serif;
+    text-align: center !important;
+    font-weight: lighter;
+    color: #696767;
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+.masters{
+    --ion-background-color: #FBFCFC;
+}
+.item1{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: white !important;
+    margin-left: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+#icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 32px;
+    font-size: 40px;
+    color: #8ACE6A;
+}
+.para1{
+    color: rgb(124, 214, 82);
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    margin-top:-20px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.input2{
+    border: #636060 1px solid;
+    background-color: white;
+    height: 50px;
+    width: 40%;
+    box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.2);
+    padding-left: 20px !important;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+.btn1{
+    height: 60px;
+    width: 100%;
+    margin-top: 15px;
+    --border-radius: 2px !important;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    --background-activated: rgba(96,213,53);
+    --background: linear-gradient(180deg, rgba(204,236,49) 0%, rgba(204,236,49) 13.5%, rgba(204,236,49) 33.33%, rgba(96,213,53) 100%) !important;
+}
+.btn2{
+    height: 60px;
+    width: 100%;
+    margin-top: 15px;
+    --border-radius: 2px !important;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    --background-activated: rgba(96,213,53);
+    --background: linear-gradient(180deg, rgba(233,41,44) 0%, rgba(233,41,44) 13.5%, rgba(233,41,44) 33.33%, rgba(255,90,106) 100%) !important;
+}

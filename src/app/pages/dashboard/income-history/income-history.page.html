@@ -1,0 +1,71 @@
+<ion-header>
+    <ion-toolbar class="new-background-color">
+        <ion-title>
+          Ertragshistorie:
+        </ion-title>
+        <ion-buttons>
+            <ion-menu-button ></ion-menu-button>
+          </ion-buttons>
+      </ion-toolbar>
+      
+  </ion-header>
+  
+  <ion-content no-padding class="masters">
+    <br>
+    <ion-segment padding mode="md" [(ngModel)]="segment" >
+      <ion-segment-button value="tag">
+        <ion-label>TAG</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="monat">
+        <ion-label>MONAT</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  <br> <br>
+    <div [ngSwitch]="segment">
+  
+      <div *ngSwitchCase="'tag'">
+          <ion-slides  class="slides" #sliders>
+              <ion-slide>
+                <img src="assets/images/Graph2.png">
+              </ion-slide>
+              <ion-slide>
+                <img src="assets/images/Graph2.png">
+              </ion-slide>
+              <ion-slide>
+                <img src="assets/images/Graph2.png">
+              </ion-slide>
+            </ion-slides>
+          
+            <div class="arrows">
+              <ion-icon class="left" (click)="prev()" name="arrow-back"></ion-icon>
+              <ion-icon class="right" (click)="next()" name="arrow-forward"></ion-icon>
+            </div>
+  
+            <div style="width: 90% !important; display: block; margin-left: auto; margin-right: auto; ">
+                <accordion [showArrows]="true" [closeOthers]="true" style="width:100% !important;">
+          
+                <div class="accordion">
+                    <accordion-group style="width: 100% !important;" (onOpen)="doSomethingOnOpen()" (onClose)="doSomethingOnClose()"> 
+                  <accordion-heading style="position: relative; top: 10px; left: 15px; font-size: 14px;" >
+                      <i id="icon-dot" class="far fa-dot-circle"></i>
+                      02.Februar 2019   
+                      <ion-icon style="margin-top: 16px;" [class.hide]="show" [class.show]="!show"  class="right" name="arrow-forward"></ion-icon>
+                      <ion-icon style="margin-top: 16px;" [class.hide]="!show" [class.show]="show" class="right" name="arrow-down"></ion-icon>
+                  </accordion-heading>
+          
+                  <p style="padding-left: 15px;">Its all about me. Lore</p>
+                </accordion-group>
+                </div>
+                
+                
+          
+              </accordion>
+            </div>
+  
+            <ion-button class="btn1" routerLink="/dashboard/menu">ZUM DASHBOARD</ion-button>
+      </div>
+      
+      </div>
+    
+  </ion-content>
+  

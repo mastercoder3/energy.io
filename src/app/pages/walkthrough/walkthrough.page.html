@@ -1,0 +1,41 @@
+
+<ion-content padding class="masters">
+  <div [ngSwitch]="walk">
+    <div *ngSwitchCase="'first'">
+        <h1>Starte Jetzt mit ENERG.IO</h1>
+        <img class="walkthrough1" src="assets/images/walkthrough1.2.png">
+        <div class="icon">
+          <img  src="assets/images/icon1.png">
+        </div>
+      
+        <ion-button class="btn" (click)="next('second')">WEITER</ion-button>
+    </div>
+    <div *ngSwitchCase="'second'">
+        <img class="walkthrough2" src="assets/images/walkthrough2.png">
+        <div class="icon">
+          <img  src="assets/images/icon1.png">
+        </div>
+      
+        <ion-button class="btn" (click)="next('third')">WEITER</ion-button>
+    </div>
+    <div *ngSwitchCase="'third'">
+        <img class="walkthrough2" src="assets/images/walkthrough3.png">
+        <div class="icon">
+          <img  src="assets/images/icon1.png">
+        </div>
+      
+        <ion-button class="btn" (click)="next('final')">WEITER</ion-button>
+      </div>
+      <div *ngSwitchCase="'final'">
+          <img class="logo" src="assets/images/logo.png">
+          <img class="walkthrough-start" src="assets/images/walkthrough-start.png">
+          <div class="icon">
+            <img  src="assets/images/icon1.png">
+          </div>
+        
+          <ion-button class="btn" routerLink="/login">STARTEN</ion-button>
+      </div>
+  </div>
+
+  </ion-content>
+  

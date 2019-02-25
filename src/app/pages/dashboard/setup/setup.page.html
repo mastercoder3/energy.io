@@ -1,0 +1,55 @@
+<ion-header>
+    <ion-toolbar class="new-background-color">
+        <ion-title>
+          SETUP:
+        </ion-title>
+        <br>
+        <br>
+        <ion-buttons>
+            <ion-menu-button ></ion-menu-button>
+          </ion-buttons>
+      </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="masters">
+    <table>
+        <thead>
+          <th>
+            <div class="item1">
+                <i id="icon" class="fa fa-cog"></i>
+            </div>
+          </th>
+          <th>
+              <p class="para1">Patric Pfortner</p>
+          </th>
+         
+        </thead>
+      </table>
+       <br>
+      <ion-row no-padding>
+          <p style="color:rgb(134, 130, 130); font-size:15px; font-weight: 100">Persönliche Informationen:</p>
+        
+          <ion-icon style="position: relative; left:130px; margin-top:15px;color:rgb(134, 130, 130)" name="arrow-down"></ion-icon>
+     
+       </ion-row>
+       <ion-row>
+          <ion-input class="input2" type="password" placeholder="Altes Passwort:"></ion-input>
+       </ion-row>
+       <ion-row>
+          <ion-input class="input2" type="password" placeholder="Neues Passwort:"></ion-input>
+       </ion-row>
+       <ion-row>
+          <ion-input class="input2" type="password" placeholder="Wieder. Neues Passwort:"></ion-input>
+       </ion-row>
+       <ion-button class="btn1">SPEICHERN</ion-button>
+        <br> <br><br>
+       <ion-row no-padding>
+          <p style="color:rgb(134, 130, 130); font-size:15px; font-weight: 100">Konto löschen:</p>
+        
+          <ion-icon style="position: relative; left:210px; margin-top:15px;color:rgb(134, 130, 130)" name="arrow-down"></ion-icon>
+     
+       </ion-row>
+       <ion-button class="btn2">KONTO LÖSCHEN</ion-button>
+       <br><br><br>
+       <ion-button class="btn1" routerLink="/dashboard/menu">ZUM DASHBOARD</ion-button>
+</ion-content>

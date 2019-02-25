@@ -1,0 +1,76 @@
+ion-menu-button{
+    color: #8ACE6A !important;
+    position: relative;
+    left: 10px;
+}
+ion-toolbar{
+    position: relative;
+}
+.header-ios ion-toolbar:last-child {
+    --border-width: 0;
+}
+.new-background-color{
+    --background: #FBFCFC;
+}
+ion-title{
+    font-family: 'Roboto', sans-serif;
+    text-align: center !important;
+    font-weight: lighter;
+    color: #696767;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+.masters{
+    --ion-background-color: #FBFCFC;
+}
+.sc-ion-segment-md-h{
+    --color-checked: #8ACE6A;
+}
+.arrows{
+    color: #666666;
+    position: relative;
+    top: -190px;
+    z-index: 1111;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+.slides{
+    margin-top: -20px;
+}
+.accordion{
+    background: white;
+    width: 100% !important;
+    // border: 1px rgba(102, 102, 102, 0.3) solid;
+    color: #888888;
+    min-height: 50px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: inline;
+}
+#icon-dot{
+    color: #8ACE6A;
+}
+.btn1{
+    height: 60px;
+    width: 90%;
+    margin: 18px;
+    --border-radius: 2px !important;
+    --background-activated: rgba(96,213,53);
+    --background: linear-gradient(180deg, rgba(204,236,49) 0%, rgba(204,236,49) 13.5%, rgba(204,236,49) 33.33%, rgba(96,213,53) 100%) !important;
+}
+

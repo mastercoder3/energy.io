@@ -1,0 +1,70 @@
+h1{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 40px;
+    font-weight: lighter;
+    color:#70d441;
+    text-shadow: 2px 2px 8px rgb(182, 171, 171);
+}
+.walkthrough1{
+    position: relative;
+    left:10px;
+    margin-top: 50px;
+}
+.icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.icon > img{
+   display: inline-block;
+   position: relative;
+   left: 45%;
+}
+.btn{
+    height: 60px;
+    width: 150px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    --border-radius: 2px !important;
+    --background: white !important;
+    --background-activated: none;
+    --color:#78c748;
+    --color-activated: #9de671;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    
+}
+
+.walkthrough2{
+    position: relative;
+    left:10px;
+    margin-top: 60px;
+}
+.icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.icon > img{
+   display: inline-block;
+   position: relative;
+   left: 45%;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.walkthrough-start{
+    position: relative;
+    left:10px;
+    margin-top: 10px;
+}
