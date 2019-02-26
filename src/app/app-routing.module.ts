@@ -20,11 +20,13 @@ const routes: Routes = [
     { path: 'menu', loadChildren: './pages/dashboard/menu/menu.module#MenuPageModule' },
     { path: 'income-history', loadChildren: './pages/dashboard/income-history/income-history.module#IncomeHistoryPageModule' },
     { path: 'setup', loadChildren: './pages/dashboard/setup/setup.module#SetupPageModule' },
-    { path: 'profile', loadChildren: './pages/dashboard/profile/profile.module#ProfilePageModule' }
+    { path: 'profile', loadChildren: './pages/dashboard/profile/profile.module#ProfilePageModule' },
+    { path: 'dashboard2', loadChildren: './pages/dashboard/dashboard2/dashboard2.module#Dashboard2PageModule' }
 
   ]},
   { path: 'no-internet-connection', loadChildren: './pages/no-internet-connection/no-internet-connection.module#NoInternetConnectionPageModule' },
-  { path: 'walkthrough', loadChildren: './pages/walkthrough/walkthrough.module#WalkthroughPageModule' }
+  { path: 'walkthrough', loadChildren: './pages/walkthrough/walkthrough.module#WalkthroughPageModule' },
+  
 ];
 
 @NgModule({

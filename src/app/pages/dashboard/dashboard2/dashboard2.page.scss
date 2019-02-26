@@ -1,0 +1,123 @@
+ion-menu-button{
+    color: #8ACE6A !important;
+    position: relative;
+    left: 10px;
+}
+
+.header-ios ion-toolbar:last-child {
+    --border-width: 0;
+}
+ion-toolbar{
+    margin-top: 10px;
+}
+
+ion-title{
+    font-family: 'Roboto', sans-serif;
+    text-align: center !important;
+    font-weight: lighter;
+    color: #888888;
+    font-size: 1.4em;
+    margin-top: 2px;
+}
+#topSection{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: #888888;
+}
+#topSection > h4{
+    text-align: center !important;
+}
+#topSection > h1{
+    text-align: center !important;
+    margin-top: -5px;
+    font-weight: bolder;
+}
+#topSection > h2{
+    text-align: center !important;
+    font-weight: bolder;
+    color:rgb(27, 26, 26) !important;
+}
+.table{
+    margin-left:auto; margin-right:auto;
+}
+th, td {
+    padding: 5px;
+    font-size: 12px;
+    border-bottom: 1px solid rgb(155, 149, 149);
+  }
+  th {
+    text-align: left;
+    color: rgb(58, 55, 55);
+  }
+  h4{
+    text-align: center !important;
+  }
+  .image{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .btn{
+      height: 30px;
+      width: 65%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid rgb(189, 182, 182);
+      --border-radius: 5px !important;
+      --background: white;
+      color: rgb(23, 23, 211);
+      font-size: 13px;
+  }
+  .btn1{
+    height: 30px;
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(189, 182, 182);
+    --border-radius: 5px !important;
+    --background: rgb(48, 48, 179);;
+    color: white;;
+    font-size: 13px;
+}
+.container {
+    display: block;
+    width: 100%;
+    overflow: hidden; 
+    white-space: nowrap;
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .scroll {
+      overflow: auto;
+    }
+  }
+
+.item{
+    display: inline-block;
+    margin-left: 20px;
+    border: 1px solid rgba(136,136,136,0.2);
+    box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.2);
+    outline: none;
+}
+
+.item > img{
+    width: 170px !important;
+    height: 100px;
+}
+
+.item h3{
+    color: green;
+    font-weight: 100;
+    opacity: 0.7;
+    margin-left: 15px;
+}
+
+.item h5{
+    color: #888888;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-left: 15px;
+}

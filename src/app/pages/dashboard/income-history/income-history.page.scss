@@ -18,7 +18,6 @@ ion-title{
     font-weight: lighter;
     color: #696767;
     font-size: 1.2em;
-    margin-top: 5px;
 }
 .masters{
     --ion-background-color: #FBFCFC;
@@ -70,7 +69,6 @@ ion-title{
     width: 90%;
     margin: 18px;
     --border-radius: 2px !important;
-    --background-activated: rgba(96,213,53);
-    --background: linear-gradient(180deg, rgba(204,236,49) 0%, rgba(204,236,49) 13.5%, rgba(204,236,49) 33.33%, rgba(96,213,53) 100%) !important;
+    --background: rgba(96,213,53);
 }
 

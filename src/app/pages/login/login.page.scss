@@ -46,10 +46,8 @@ ion-button{
     height: 60px;
     --color: white;
     --border-color: none;
-    --background: red !important;
     box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.2);
-    --background-activated: rgba(96,213,53);
-    --background: linear-gradient(90deg, rgba(204,236,49) 0%, rgba(204,236,49) 13.5%, rgba(204,236,49) 33.33%, rgba(96,213,53) 100%) !important;
+    --background: rgba(96,213,53);
 }
 
 a{
